@@ -518,8 +518,8 @@ def client():
 
         os.kill(os.getpid(), signal.SIGTERM)
 
-# Start installation
-install()
+# Uncomment to installation
+#install()
 
 # For pyHook
 logger = pyHook.HookManager()
