@@ -63,7 +63,7 @@ def client():
 
     # Open server configuration file
     try:
-        with open(os.environ['TEMP']+os.sep+'server.ini') as server_config:
+        with open('server.ini') as server_config:
             var = server_config.read().replace('\n', ' ').replace('\t', ' ').replace(' ', '')
             IP = var[var.find('=')+1: var.find('PORT=')]
             server = int(var[var.find('PORT=')+5:])
